@@ -30,9 +30,9 @@ export const MainScreen: FC = () => {
 
 
 export const App: FC = () => {
-    return (
-      <Game width={1024} height={768}>
-        <MainScreen />
-      </Game>
-    );
+  return (
+    <Game width={1024} height={768}>
+      <MainScreen />
+    </Game>
+  );
 };

@@ -1,5 +1,6 @@
 
-export interface Subscriber<T> {
+// eslint-disable-next-line @typescript-eslint/ban-types
+export interface Subscriber<T extends Function | {}> {
   subscribe(fn: T): void;
   unsubscribe(fn: T): void;
 }

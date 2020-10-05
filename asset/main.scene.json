@@ -1,0 +1,15 @@
+{
+  "scene": {
+    "knight": {
+      "sprite": {
+        "atlas": "knight"
+      }
+    }
+  },
+  "atlas": {
+    "knight" : {
+      "src": "knight.atlas.json",
+      "map": "knight.png"
+    }
+  }
+}

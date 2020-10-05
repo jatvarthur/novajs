@@ -65,3 +65,5 @@ export const Render2D: FC<Render2DProps> = (props) => {
     </Render2DContext.Provider>
   );
 };
+
+Render2D.displayName = "Render2D";

@@ -81,3 +81,5 @@ export const Game: FC<GameProps> = (props) => {
     </GameLoopContext.Provider>
   );
 };
+
+Game.displayName = "Game";

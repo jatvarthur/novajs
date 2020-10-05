@@ -7,7 +7,7 @@ module.exports = {
     mode: 'development',
     devtool: 'inline-source-map',
     devServer: {
-        contentBase: './dist',
+        contentBase: ['./dist', './asset'],
         hot: false,
         inline: false
     },
@@ -31,9 +31,13 @@ module.exports = {
               }
             },
             {
-                test: /\.tsx?$/,
-                use: 'ts-loader',
-                exclude: '/node_modules/'
+              test: /\.tsx?$/,
+              use: 'ts-loader',
+              exclude: '/node_modules/'
+            },
+            {
+              test: /\.png?$/,
+              use: 'url-loader'
             }
         ],
     },
